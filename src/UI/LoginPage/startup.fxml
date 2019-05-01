@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.LoginPage.StartupPageController">
+   <children>
+      <TextField fx:id="userNameField" layoutX="76.0" layoutY="95.0" />
+      <TextField fx:id="publicIpField" layoutX="76.0" layoutY="152.0" />
+      <TextField fx:id="publicPortField" layoutX="76.0" layoutY="209.0" />
+      <TextField fx:id="privatePortField" layoutX="76.0" layoutY="264.0" />
+      <Label layoutX="76.0" layoutY="78.0" text="Username" />
+      <Label layoutX="76.0" layoutY="135.0" prefHeight="17.0" prefWidth="54.0" text="Public IP" />
+      <Label layoutX="76.0" layoutY="192.0" text="Public Port" />
+      <Label layoutX="76.0" layoutY="250.0" text="Private Port" />
+      <Button fx:id="startButton" layoutX="97.0" layoutY="357.0" mnemonicParsing="false" onAction="#checkAndConnect" prefHeight="25.0" prefWidth="107.0" text="Start" />
+      <Label layoutX="39.0" layoutY="452.0" prefHeight="17.0" prefWidth="220.0" />
+      <TextArea fx:id="errorLabel" layoutX="326.0" layoutY="44.0" prefHeight="410.0" prefWidth="265.0" />
+   </children>
+</AnchorPane>
